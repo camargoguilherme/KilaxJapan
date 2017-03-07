@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/apk/tools"
+    tools:context=".Activity.MainActivity">
+
+    <item android:id="@+id/item_configuracoes"
+        android:title="@string/settings"
+        android:orderInCategory="100"   app:showAsAction="never" />
+
+    <item android:id="@+id/item_sair"
+        android:title="@string/sair"
+        android:orderInCategory="200" app:showAsAction="never"/>
+
+    <item android:id="@+id/item_recarregar"
+        android:title="@string/refresh"
+        android:orderInCategory="300" app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_refresh"/>
+
+
+
+
+
+</menu>

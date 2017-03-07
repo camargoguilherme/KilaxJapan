@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- IDs-->
+
+    <item name="textProd1" type="id" />
+    <item name="textProdSub1" type="id" />
+    <item name="textProd2" type="id" />
+    <item name="produto_imagem_listview" type="id" />
+    <item name="produto_imagem_detalhe" type="id" />
+</resources>

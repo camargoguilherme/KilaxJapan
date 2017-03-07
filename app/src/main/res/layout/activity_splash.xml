@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nbs.kilaxjapan.kilaxjapan.Activity.Splash"
+    android:background="@color/colorBackGroundSplah"
+
+    android:layout_alignWithParentIfMissing="false"
+    android:longClickable="true">
+    <!--android:theme="@style/AppThemeNoActionBar"-->
+    <TextView
+        android:text="@string/splash_text"
+        android:layout_width="@dimen/splash_text_largura"
+        android:layout_height="@dimen/splash_text_altura"
+        android:id="@+id/splash_text"
+        android:layout_marginTop="27dp"
+        android:ellipsize="start"
+        android:textColor="@color/colorSplashText"
+        android:textSize="@dimen/splash_text_size"
+        android:layout_below="@+id/splash_screen"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:padding="20dp" />
+
+    <ImageView
+        android:layout_width="@dimen/splash_screen"
+        android:layout_height="@dimen/splash_screen"
+        android:id="@+id/splash_screen"
+        android:gravity="center"
+        android:layout_marginTop="151dp"
+        android:background="@drawable/kilax_branco"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

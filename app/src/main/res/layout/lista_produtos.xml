@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TwoLineListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@id/produto_imagem_listview"
+        app:srcCompat="@mipmap/kilax_cinza"
+        android:layout_width="@dimen/produto_imagem_listview"
+        android:layout_height="@dimen/produto_imagem_listview" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textProd1"
+        android:textColor="@color/colorTituloListView"
+        android:layout_toEndOf="@id/produto_imagem_listview"
+        android:layout_toRightOf="@id/produto_imagem_listview"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textProdSub1"
+        android:layout_below="@id/textProd1"
+        android:layout_alignStart="@+id/textProd1"
+        android:layout_alignLeft="@+id/textProd1"
+        android:textSize="12sp"
+        android:textColor="@color/colorDetalheList"
+        android:paddingLeft="10dp" />
+
+
+</>

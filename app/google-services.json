@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "843171232021",
+    "firebase_url": "https://kilax-japan.firebaseio.com",
+    "project_id": "kilax-japan",
+    "storage_bucket": "kilax-japan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843171232021:android:122ea609fb04cb3b",
+        "android_client_info": {
+          "package_name": "com.nbs.kilaxjapan.kilaxjapan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843171232021-e19ufmiacsegohh1hpo3e6bjk0aeel1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nbs.kilaxjapan.kilaxjapan",
+            "certificate_hash": "5b52ab262e59a4c3f9b987aadf0d56809e52dcd4"
+          }
+        },
+        {
+          "client_id": "843171232021-mb1knaqru8jd1cipjnkcq43i4hfp216v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAELMz7J3qjKBY17vXoKY5nIU5L_tcgL3o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843171232021-mb1knaqru8jd1cipjnkcq43i4hfp216v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

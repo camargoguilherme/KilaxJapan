@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Titulo do app -->
+    <string name="app_name">Kilax Japan</string>
+
+    <!-- Mensagem apresentada na abertura do app -->
+    <string name="splash_text">AS IDEIAS DO ORIENTE PARA SEU AMBIENTE</string>
+
+    <!-- Itens da ProdutosActivity -->
+    <string name="EAN">CODIGO DE BARRAS</string>
+    <string name="nome_Produto">NOME DO PRODUTO</string>
+    <string name="material">MATERIAL</string>
+    <string name="medidas">MEDIDAS</string>
+    <string name="peso">PESO</string>
+    <string name="origem">ORIGEM</string>
+    <string name="precaucoes">PRECAUÇÕES</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- String para Toolbar menu_main-->
+    <string name="sair">Sair</string>
+    <string name="settings">Configurações</string>
+    <string name="refresh">Recarregar</string>
+    <string name="search">Pesquisar</string>
+
+    <!-- String para Toolbar menu_produtos-->
+    <string name="back">Voltar</string>
+
+
+
+    <!-- -->
+
+</resources>

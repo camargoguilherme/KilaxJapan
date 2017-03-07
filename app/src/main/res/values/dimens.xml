@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="splash_screen">180dp</dimen>
+
+    <!-- Dimençoes do Texto da Tela de Inicializaçao-->
+    <dimen name="splash_text_altura">120dp</dimen>
+    <dimen name="splash_text_largura">300dp</dimen>
+    <dimen name="splash_text_size">20sp</dimen>
+
+    <!-- Dimençoes do Texto de activity_produtos -->
+    <dimen name="detalhe_text_size">16sp</dimen>
+    <dimen name="detalhe_text_margem">10dp</dimen>
+
+    <!-- Dimençoes da Imagem da ListView -->
+    <dimen name="produto_imagem_detalhe">180dp</dimen>
+
+    <!-- Dimençoes da Imagem da ListView -->
+    <dimen name="produto_imagem_listview">80dp</dimen>
+
+</resources>
