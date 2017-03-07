@@ -69,7 +69,7 @@ public class ProdutosAdapter extends ArrayAdapter<Produtos> {
             Produtos produto = produtos.get( position );
 
             textView1.setText(produto.getDescricao());
-            textView2.setText("Material: " + produto.getMaterial());
+            textView2.setText(R.string.subTitulo + produto.getMaterial());
 
             //String com URL dos arquivos
             String url = "gs://kilax-japan.appspot.com";

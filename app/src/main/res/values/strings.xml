@@ -25,8 +25,8 @@
     <!-- String para Toolbar menu_produtos-->
     <string name="back">Voltar</string>
 
+    <!-- Texto de ProdutosAdapter -->
+    <string name="subTitulo">Material: </string>
 
-
-    <!-- -->
 
 </resources>
