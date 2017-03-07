@@ -39,19 +39,19 @@ public class Produtos {
         return material;
     }
 
-    private String getMedidas() {
+    String getMedidas() {
         return medidas;
     }
 
-    private String getOrigem() {
+    String getOrigem() {
         return origem;
     }
 
-    private String getPeso() {
+    String getPeso() {
         return peso;
     }
 
-    private String getPrecaucoes() {
+    String getPrecaucoes() {
         return precaucoes;
     }
 

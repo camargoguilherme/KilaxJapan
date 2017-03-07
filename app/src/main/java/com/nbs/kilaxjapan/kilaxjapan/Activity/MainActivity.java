@@ -1,8 +1,6 @@
 package com.nbs.kilaxjapan.kilaxjapan.Activity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.support.multidex.MultiDex;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
