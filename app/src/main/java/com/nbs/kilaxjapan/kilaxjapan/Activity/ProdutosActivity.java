@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.multidex.MultiDex;
+import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -21,6 +22,7 @@ import com.firebase.ui.storage.images.FirebaseImageLoader;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.nbs.kilaxjapan.kilaxjapan.Adapter.AndroidImageAdapter;
 import com.nbs.kilaxjapan.kilaxjapan.R;
 import com.squareup.picasso.Picasso;
 
@@ -96,7 +98,12 @@ public class ProdutosActivity extends AppCompatActivity {
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Ainda Nao Conseguimos colocar as imagens.\n Por favor, aguarde!", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "Ainda Nao Conseguimos colocar as imagens.\n Por favor, aguarde!", Toast.LENGTH_LONG).show();
+
+                ViewPager mViewPager = (ViewPager) findViewById(R.id.viewPageAndroid);
+                AndroidImageAdapter adapterView = new AndroidImageAdapter(getApplicationContext());
+                mViewPager.setAdapter(adapterView);
+
             }
         });
     }
