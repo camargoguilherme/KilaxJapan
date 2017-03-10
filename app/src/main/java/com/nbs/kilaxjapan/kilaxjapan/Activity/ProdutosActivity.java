@@ -1,9 +1,7 @@
 package com.nbs.kilaxjapan.kilaxjapan.Activity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.multidex.MultiDex;
 import android.support.v4.view.ViewPager;
@@ -19,10 +17,8 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.storage.images.FirebaseImageLoader;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.nbs.kilaxjapan.kilaxjapan.Adapter.AndroidImageAdapter;
 import com.nbs.kilaxjapan.kilaxjapan.R;
 import com.squareup.picasso.Picasso;
 
@@ -98,12 +94,14 @@ public class ProdutosActivity extends AppCompatActivity {
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(getApplicationContext(), "Ainda Nao Conseguimos colocar as imagens.\n Por favor, aguarde!", Toast.LENGTH_LONG).show();
 
-                ViewPager mViewPager = (ViewPager) findViewById(R.id.viewPageAndroid);
-                AndroidImageAdapter adapterView = new AndroidImageAdapter(getApplicationContext());
-                mViewPager.setAdapter(adapterView);
+                String imagem = null;
+                if(imagem == null){
+                    Toast.makeText(getApplicationContext(), "Imagens ainda não disponiveis.\n Por favor, aguarde!", Toast.LENGTH_LONG).show();
 
+                }else {
+                    Picasso.with(getApplicationContext()).load(imagem).into(image);
+                }
             }
         });
     }
