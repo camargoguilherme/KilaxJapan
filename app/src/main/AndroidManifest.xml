@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activity.Splash"
+            android:name=".Activity.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,6 +25,7 @@
         </activity>
         <activity android:name=".Activity.MainActivity" />
         <activity android:name=".Activity.ProdutosActivity" />
+        <activity android:name=".Activity.PagerViewActivity" android:theme="@style/NoActionBar"></activity>
     </application>
 
 </manifest>

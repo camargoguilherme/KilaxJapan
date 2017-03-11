@@ -1,7 +1,7 @@
 package com.nbs.kilaxjapan.kilaxjapan.Activity;
+
+
 public class Produtos {
-
-
 
     private String ean;
     private String descricao;
@@ -11,9 +11,7 @@ public class Produtos {
     private String peso;
     private String precaucoes;
 
-
     public Produtos() {
-
     }
 
     public Produtos(String ean, String descricao, String material, String medidas, String origem, String peso, String precaucoes) {
@@ -24,7 +22,6 @@ public class Produtos {
         this.origem = origem;
         this.peso = peso;
         this.precaucoes = precaucoes;
-
     }
 
     public String getEan() {
@@ -39,32 +36,30 @@ public class Produtos {
         return material;
     }
 
-    String getMedidas() {
+    public String getMedidas() {
         return medidas;
     }
 
-    String getOrigem() {
+    public String getOrigem() {
         return origem;
     }
 
-    String getPeso() {
+    public String getPeso() {
         return peso;
     }
 
-    String getPrecaucoes() {
+    public String getPrecaucoes() {
         return precaucoes;
     }
 
-
     @Override
     public String toString() {
-        return "\nCodigo de Barras: " + ean +
-                "\nNome do Produto: " + descricao +
-                "\nMaterial: " + material +
-                "\nMedidas: " + medidas +
-                "\nOrigem: " + origem +
-                "\nPeso: " + peso +
-                "\nPrecações: " + precaucoes;
+        return "Codigo de Barras: " + ean + "\n" +
+                "Nome do Produto: " + descricao + "\n" +
+                "Material: " + material + "\n" +
+                "Medidas: " + medidas + "\n" +
+                "Origem: " + origem + "\n" +
+                "Peso: "+ peso +"\n" +
+                "Precações: "+ precaucoes;
     }
-
 }

@@ -8,7 +8,7 @@ import android.view.WindowManager;
 
 import com.nbs.kilaxjapan.kilaxjapan.R;
 
-public class Splash extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
 
     private static int SPLASH_TIME_OUT = 5000;
 
@@ -33,7 +33,7 @@ public class Splash extends AppCompatActivity {
             public void run() {
                 // Esse método será executado sempre que o timer acabar
                 // E inicia a activity principal
-                Intent i = new Intent(Splash.this, MainActivity.class);
+                Intent i = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(i);
 
                 // Fecha esta activity

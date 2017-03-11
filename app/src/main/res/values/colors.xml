@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#FF669933</color>
     <color name="colorAccent">#FFFFFF</color>
 
-    <!--Colors com.nbs.kilaxjapan.kilaxjapan.Activity Splash-->
+    <!--Colors com.nbs.kilaxjapan.kilaxjapan.Activity SplashActivity-->
     <color name="colorSplashText">#FFFFFF</color>
     <color name="colorBackGroundSplah">#99cc33</color>
 

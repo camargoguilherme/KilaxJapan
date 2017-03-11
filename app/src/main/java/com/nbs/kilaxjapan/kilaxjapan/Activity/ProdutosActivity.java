@@ -13,14 +13,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.storage.images.FirebaseImageLoader;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.nbs.kilaxjapan.kilaxjapan.Adapter.CustonSwipeAdapper;
 import com.nbs.kilaxjapan.kilaxjapan.R;
-import com.squareup.picasso.Picasso;
 
 public class ProdutosActivity extends AppCompatActivity {
 
@@ -36,6 +35,8 @@ public class ProdutosActivity extends AppCompatActivity {
     private Toolbar toolbar;
 
     private ImageView image;
+
+
 
     public StorageReference storage =  FirebaseStorage.getInstance().getReference();
 
@@ -74,7 +75,7 @@ public class ProdutosActivity extends AppCompatActivity {
         descrdb.setText(descr);
         materialdb.setText(intent.getExtras().getString( "material" ));
         pesodb.setText(intent.getExtras().getString( "peso" ));
-        medidasdb.setText(intent.getExtras().getString( "medida" ));
+        medidasdb.setText(intent.getExtras().getString( "medidas" ));
         origemdb.setText(intent.getExtras().getString( "origem" ));
         precaucoesdb.setText(intent.getExtras().getString( "precaucoes" ));
 
@@ -94,14 +95,8 @@ public class ProdutosActivity extends AppCompatActivity {
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                String imagem = null;
-                if(imagem == null){
-                    Toast.makeText(getApplicationContext(), "Imagens ainda não disponiveis.\n Por favor, aguarde!", Toast.LENGTH_LONG).show();
-
-                }else {
-                    Picasso.with(getApplicationContext()).load(imagem).into(image);
-                }
+                startActivity( new Intent( ProdutosActivity.this, PagerViewActivity.class));
+                finish();
             }
         });
     }
