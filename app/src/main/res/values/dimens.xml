@@ -5,9 +5,13 @@
     <dimen name="splash_screen">180dp</dimen>
 
     <!-- Dimençoes do Texto da Tela de Inicializaçao-->
-    <dimen name="splash_text_altura">120dp</dimen>
-    <dimen name="splash_text_largura">300dp</dimen>
-    <dimen name="splash_text_size">20sp</dimen>
+    <dimen name="splash_text_altura">35dp</dimen>
+    <dimen name="splash_text_largura1">160dp</dimen>
+    <dimen name="splash_text_largura2">180dp</dimen>
+    <dimen name="splash_text_size1">26sp</dimen>
+    <dimen name="splash_text_size2">26sp</dimen>
+    <dimen name="splash_text_size3">20sp</dimen>
+    <dimen name="splash_text_padding">3dp</dimen>
 
     <!-- Dimençoes do Texto de activity_produtos -->
     <dimen name="detalhe_text_size">16sp</dimen>

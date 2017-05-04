@@ -1,6 +1,7 @@
 package com.nbs.kilaxjapan.kilaxjapan.Activity;
 
 import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -21,11 +22,13 @@ import com.google.firebase.database.ValueEventListener;
 import com.nbs.kilaxjapan.kilaxjapan.Adapter.ProdutosAdapter;
 import com.nbs.kilaxjapan.kilaxjapan.R;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     private final int tempo = 4000;
+    private Produtos produtos;
     private Toast toast;
     private long lastBackPressTime = 0;
     private ListView lisProd;
@@ -51,18 +54,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent =  new Intent(MainActivity.this, ProdutosActivity.class);
 
                 //Recuperar dados a serem passados
-                Produtos produtos = prod.get( position );
+                produtos = prod.get( position );
 
-
-                //Envia dados para ProdutosActivity
-                intent.putExtra("ean", produtos.getEan());
-                intent.putExtra("desc", produtos.getDescricao());
-                intent.putExtra("medidas", produtos.getMedidas());
-                intent.putExtra("peso", produtos.getPeso());
-                intent.putExtra("origem", produtos.getOrigem());
-                intent.putExtra("material", produtos.getMaterial());
-                intent.putExtra("precaucoes", produtos.getPrecaucoes());
-
+                //Envia 'produtos' para ProdutosActivity
+                intent.putExtra("produto", produtos);
                 startActivity( intent );
                 finish();
             }
@@ -77,8 +72,6 @@ public class MainActivity extends AppCompatActivity {
         public void onDataChange(DataSnapshot dataSnapshot) {
             prod.clear();
             for (DataSnapshot data : dataSnapshot.getChildren()) {
-
-                Log.i("FIREBASE", data.getValue().toString());
                 Produtos produto = data.getValue(Produtos.class);
 
                 prod.add(produto);
@@ -119,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if (this.lastBackPressTime < System.currentTimeMillis() - 4000) {
+        if (this.lastBackPressTime < System.currentTimeMillis() - tempo) {
             toast = Toast.makeText(this, "Pressione o Botão Voltar novamente para fechar o Aplicativo.", tempo);
             toast.show();
             this.lastBackPressTime = System.currentTimeMillis();

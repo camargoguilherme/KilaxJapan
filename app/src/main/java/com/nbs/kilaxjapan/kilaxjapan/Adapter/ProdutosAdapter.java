@@ -53,7 +53,8 @@ public class ProdutosAdapter extends ArrayAdapter<Produtos> {
     public View getView(int position, final View convertView, ViewGroup parent) {
         View view = null;
 
-        //Verifica se A lista esta preenchida
+
+        //Verifica se ArrayList esta preenchido
         if(produtos != null){
 
             //Inicializa Produtos para montagem de layout
@@ -61,6 +62,7 @@ public class ProdutosAdapter extends ArrayAdapter<Produtos> {
 
             //Monta a View a partir do xml
             view = inflater.inflate(R.layout.lista_produtos, parent, false );
+
 
             //Recuperar Elementos para Vizualiçao
             TextView textView1 = (TextView) view.findViewById(R.id.textProd1);
@@ -71,17 +73,21 @@ public class ProdutosAdapter extends ArrayAdapter<Produtos> {
             textView1.setText(produto.getDescricao());
             textView2.setText("Material: " + produto.getMaterial());
 
-            //String com URL dos arquivos
-            String url = "gs://kilax-japan.appspot.com";
+
 
             //Instanciando FirebaseStorage e StorageReference
-            StorageReference storageRef = storage.child("/produtos/"+  produto.getEan() + "/" +  produto.getEan() + ".jpg");
+            StorageReference storageRef = storage.child("/produtos/"+  produto.getEan() + "/" + produto.getEan() +".jpg");
 
             //Seta a Imagem no ImageView
-            Glide.with(context /* context */)
+
+                Glide.with(context)
                     .using(new FirebaseImageLoader())
                     .load(storageRef)
                     .into(imageView);
+
+
+
+
         }
         return view;
     }

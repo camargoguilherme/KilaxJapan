@@ -1,7 +1,9 @@
 package com.nbs.kilaxjapan.kilaxjapan.Activity;
 
 
-public class Produtos {
+import java.io.Serializable;
+
+public class Produtos implements Serializable{
 
     private String ean;
     private String descricao;

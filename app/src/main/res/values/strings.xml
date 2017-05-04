@@ -4,7 +4,9 @@
     <string name="app_name">Kilax Japan</string>
 
     <!-- Mensagem apresentada na abertura do app -->
-    <string name="splash_text">AS IDEIAS DO ORIENTE PARA SEU AMBIENTE</string>
+    <string name="splash_text1">As ideias</string>
+    <string name="splash_text2">do Oriente</string>
+    <string name="splash_text3">para seu ambiente</string>
 
     <!-- Itens da ProdutosActivity -->
     <string name="EAN">CODIGO DE BARRAS</string>

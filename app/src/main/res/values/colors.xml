@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#99cc33</color>
-    <color name="colorPrimaryDark">#FF669933</color>
-    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorPrimary">#9c3</color>
+    <color name="colorPrimaryDark">#F693</color>
+    <color name="colorAccent">#FFF</color>
 
-    <!--Colors com.nbs.kilaxjapan.kilaxjapan.Activity SplashActivity-->
-    <color name="colorSplashText">#FFFFFF</color>
-    <color name="colorBackGroundSplah">#99cc33</color>
-
+    <!--Colors SplashActivity-->
+    <color name="colorSplashText">#FFF</color>
+    <color name="colorBackGroundSplah">#FFF</color>
 
     <!-- Colors TextView-->
-    <color name="colorTituloText">#FF000000</color>
-    <color name="colorDetalheText">#FF666666</color>
+    <color name="colorTituloText">#F000</color>
+    <color name="colorDetalheText">#F666</color>
 
     <!-- Colors ListView-->
-    <color name="colorTituloListView">#FF000000</color>
-    <color name="colorDetalheList">#FF666666</color>
+    <color name="colorTituloListView">#F000</color>
+    <color name="colorDetalheList">#F666</color>
     <color name="colorDivider">#a4a4a4</color>
 
     <!--Colors Kilax -->
-    <color name="colorKilaxVerde">#99CC33</color>
-    <color name="colorKilaxLaranja">#FF9900</color>
-    <color name="colorKilaxRoxo">#9966CC</color>
-    <color name="colorKilaxBranco">#FFFFFF</color>
-    <color name="colorKilaxCinza">#666666</color>
+    <color name="colorKilaxVerde">#9C3</color>
+    <color name="colorKilaxLaranja">#F90</color>
+    <color name="colorKilaxRoxo">#96C</color>
+    <color name="colorKilaxBranco">#FFF</color>
+    <color name="colorKilaxCinza">#666</color>
 
 
 </resources>

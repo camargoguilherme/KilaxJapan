@@ -6,9 +6,9 @@
 
     <ImageView
         android:id="@id/produto_imagem_listview"
-        app:srcCompat="@mipmap/kilax_cinza"
         android:layout_width="@dimen/produto_imagem_listview"
-        android:layout_height="@dimen/produto_imagem_listview" />
+        android:layout_height="@dimen/produto_imagem_listview"
+        app:srcCompat="@drawable/kilax_cinza" />
 
     <TextView
         android:layout_width="match_parent"
