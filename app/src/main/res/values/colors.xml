@@ -9,7 +9,7 @@
     <color name="colorBackGroundSplah">#FFF</color>
 
     <!-- Colors TextView-->
-    <color name="colorTituloText">#F000</color>
+    <color name="colorTituloText">#000000</color>
     <color name="colorDetalheText">#F666</color>
 
     <!-- Colors ListView-->

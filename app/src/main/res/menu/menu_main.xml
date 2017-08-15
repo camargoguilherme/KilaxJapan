@@ -3,21 +3,26 @@
     xmlns:tools="http://schemas.android.com/apk/tools"
     tools:context=".Activity.MainActivity">
 
+    <item android:id="@+id/search"
+        android:title="@string/search_hint"
+        android:icon="@drawable/ic_action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom"/>
+
     <item android:id="@+id/item_configuracoes"
         android:title="@string/settings"
-        android:orderInCategory="100"   app:showAsAction="never" />
+        android:orderInCategory="100"
+        app:showAsAction="never" />
 
     <item android:id="@+id/item_sair"
         android:title="@string/sair"
-        android:orderInCategory="200" app:showAsAction="never"/>
+        android:orderInCategory="200"
+        app:showAsAction="never"/>
 
     <item android:id="@+id/item_recarregar"
         android:title="@string/refresh"
-        android:orderInCategory="300" app:showAsAction="ifRoom"
+        android:orderInCategory="300"
+        app:showAsAction="ifRoom"
         android:icon="@drawable/ic_refresh"/>
-
-
-
-
 
 </menu>

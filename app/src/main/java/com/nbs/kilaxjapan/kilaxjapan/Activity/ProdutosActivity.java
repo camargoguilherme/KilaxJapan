@@ -2,12 +2,10 @@ package com.nbs.kilaxjapan.kilaxjapan.Activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.multidex.MultiDex;
-import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -19,13 +17,9 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.storage.images.FirebaseImageLoader;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.nbs.kilaxjapan.kilaxjapan.Adapter.CustonSwipeAdapper;
 import com.nbs.kilaxjapan.kilaxjapan.R;
-
-import java.io.Serializable;
 
 public class ProdutosActivity extends AppCompatActivity {
 
@@ -39,10 +33,7 @@ public class ProdutosActivity extends AppCompatActivity {
     private TextView medidasdb;
     private TextView origemdb;
     private TextView precaucoesdb;
-
-
-
-    public FirebaseStorage storage = FirebaseStorage.getInstance();
+    public StorageReference storage = FirebaseStorage.getInstance().getReferenceFromUrl("gs://kilax-japan.appspot.com/produtos/fotos");
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -72,7 +63,6 @@ public class ProdutosActivity extends AppCompatActivity {
         //Seta a Imagem no ImageView
         image = (ImageView) findViewById(R.id.produto_imagem_detalhe);
 
-
         //Setando as informaçoes dos Produtos
         EANdb.setText(produto.getEan());
         descrdb.setText(produto.getDescricao());
@@ -84,7 +74,7 @@ public class ProdutosActivity extends AppCompatActivity {
 
         //Instanciando FirebaseStorage e StorageReference
 
-        StorageReference storageRef = storage.getReference().child("/produtos/" + produto.getEan() + "/" +  produto.getEan() + ".jpg");
+        StorageReference storageRef = storage.child( produto.getEan() + ".JPG");
 
         //Seta a Imagem no ImageView
             Glide.with(this)

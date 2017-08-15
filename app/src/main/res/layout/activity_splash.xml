@@ -4,7 +4,6 @@
     android:id="@+id/activity_splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="layout_centerVertical"
     android:layout_alignWithParentIfMissing="false"
     android:background="@color/colorBackGroundSplah"
 
@@ -18,9 +17,10 @@
         android:layout_width="@dimen/splash_screen"
         android:layout_height="@dimen/splash_screen"
         android:background="@drawable/kilax_cinza"
+        android:layout_marginTop="141dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="66dp" />
+        android:layout_alignLeft="@+id/splash_text2"
+        android:layout_alignStart="@+id/splash_text2" />
     <TextView
         android:id="@+id/splash_text1"
         android:layout_width="@dimen/splash_text_largura1"
@@ -37,7 +37,7 @@
         android:textColor="@color/colorSplashText"
         android:textSize="@dimen/splash_text_size1"
         android:textStyle="normal|bold"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:layout_below="@+id/splash_screen"
         android:layout_centerHorizontal="true" />
 
